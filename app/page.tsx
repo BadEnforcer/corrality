@@ -10,31 +10,31 @@ const sampleCarouselItems = [
   {
     headerImg: "https://cdn.prod.website-files.com/64e875748a2cfff2e33de161/64e89b4f2e553031249da292_logo-porshe.svg",
     footerText: "Empowering sustainable solutions for modern infrastructure.",
-    backgroundImg: "https://placehold.co/600x400/000000/FFFFFF/png",
+    backgroundImg: "https://picsum.photos/400",
     imageAlt: "Innovative design background image",
   },
   {
     headerImg: "https://cdn.prod.website-files.com/64e875748a2cfff2e33de161/64e89b4f2e553031249da292_logo-porshe.svg",
     footerText: "Leading the way in engineering and technology.",
-    backgroundImg: "https://placehold.co/600x400/000000/FFFFFF/png",
+    backgroundImg: "https://picsum.photos/400",
     imageAlt: "Global engineering concept",
   },
   {
     headerImg: "https://cdn.prod.website-files.com/64e875748a2cfff2e33de161/64e89b4f2e553031249da292_logo-porshe.svg",
     footerText: "Bridging communities through advanced construction techniques.",
-    backgroundImg: "https://placehold.co/600x400/000000/FFFFFF/png",
+    backgroundImg: "https://picsum.photos/400",
     imageAlt: "Community development background",
   },
   {
     headerImg: "https://cdn.prod.website-files.com/64e875748a2cfff2e33de161/64e89b4f2e553031249da292_logo-porshe.svg",
     footerText: "Bridging communities through advanced construction techniques.",
-    backgroundImg: "https://placehold.co/600x400/000000/FFFFFF/png",
+    backgroundImg: "https://picsum.photos/400",
     imageAlt: "Community development background",
   },
   {
     headerImg: "https://cdn.prod.website-files.com/64e875748a2cfff2e33de161/64e89b4f2e553031249da292_logo-porshe.svg",
     footerText: "Bridging communities through advanced construction techniques.",
-    backgroundImg: "https://placehold.co/600x400/000000/FFFFFF/png",
+    backgroundImg: "https://picsum.photos/400",
     imageAlt: "Community development background",
   },
   {
