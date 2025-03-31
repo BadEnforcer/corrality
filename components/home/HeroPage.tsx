@@ -8,7 +8,7 @@ function HeroPage() {
   const y = useTransform(scrollY, (value) => -value * 0.2);
 
   return (
-    <div className="h-[90vh] grid grid-rows-5  bg-gradient-to-tr from-amber-300 to-fuchsia-500 rounded-2xl mx-2 drop-shadow-lg">
+    <div className="h-[93vh] grid grid-rows-5  bg-gradient-to-tr from-amber-300 to-fuchsia-500 rounded-2xl drop-shadow-lg">
       {/* Top Spacer */}
       <div className="row-span-1"></div>
       
