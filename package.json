@@ -13,6 +13,7 @@
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/vite": "^4.0.17",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",
@@ -30,7 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.0.17",
     "typescript": "^5"
   }
 }
