@@ -1,0 +1,13 @@
+
+
+/* Custom styles */
+:root {
+  --background: #ffffff; /* White background */
+  --foreground: #171717; /* Dark text color */
+}
+
+body {
+  background-color: var(--background); /* Use the white background */
+  color: var(--foreground); /* Use the dark text color */
+  font-family: Arial, Helvetica, sans-serif; /* Set your desired font */
+}
