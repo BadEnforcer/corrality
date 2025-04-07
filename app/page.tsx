@@ -5,6 +5,11 @@ import HeroPage from "@/components/home/HeroPage";
 import CustomCarousel from "@/components/CustomSlider";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { motion } from "motion/react";
+import Service from '@/components/home/Service'
+import Members from '@/components/home/Members'
+import Image from "next/image";
+import { serviceData } from "@/assets/assets";
+
 
 const sampleCarouselItems = [
   {
@@ -46,13 +51,13 @@ const sampleCarouselItems = [
 ];
 
 
-export default function Page () {
-  
+export default function Page() {
+
   return (
     <>
-      <HomeNavbar/>
+      <HomeNavbar />
       <div className="relative mx-2">
-        <HeroPage/>
+        <HeroPage />
       </div>
       <div className={"my-4 mx-2 "}>
         <Card>
@@ -60,51 +65,51 @@ export default function Page () {
             <div className="grid grid-cols-1 lg:grid-cols-12 my-2">
               <motion.p
                 className="col-span-2 uppercase text-muted-foreground"
-                initial={{opacity: 0, y: 10}}
-                animate={{opacity: 1, y: 0}}
-                transition={{duration: 1.2, ease: "easeOut"}}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
               >
                 Our
-                <br/>
+                <br />
                 customers
               </motion.p>
               <div className="col-span-10">
                 <motion.p className="scroll-m-20 text-5xl font-medium tracking-tight leading-12">
                   <motion.span
-                    initial={{opacity: 0, y: 10}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{duration: 1.5, ease: "easeOut",}}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.5, ease: "easeOut", }}
                     className="inline-block"
                   >
                     the wonderful
                   </motion.span>
                   {" "}
                   <motion.span
-                    initial={{opacity: 0, y: -10}}
-                    whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: true, amount: 0.75}}
-                    transition={{duration: .4, ease: "easeOut", delay: 0.8}}
+                    initial={{ opacity: 0, y: -10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: .4, ease: "easeOut", delay: 0.8 }}
                     className="inline-block line-through"
                   >
                     companies
                   </motion.span>
-                  <br className="lg:hidden"/>
+                  <br className="lg:hidden" />
                   {` `}
                   <motion.span
-                    initial={{opacity: 0, x: 10}}
-                    whileInView={{opacity: 1, x: 0}}
-                    viewport={{once: true, amount: 0.75}}
-                    transition={{duration: 1.7, ease: "easeOut", delay: 1.2}}
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: 1.7, ease: "easeOut", delay: 1.2 }}
                     className="inline-block"
                   >
                     people
                   </motion.span>
-                  <br/>
+                  <br />
                   <motion.span
-                    initial={{opacity: 0, y: 10}}
-                    whileInView={{opacity: 1, y: 0}}
-                    viewport={{once: true, amount: 0.75}}
-                    transition={{duration: 1.7, ease: "easeOut", delay: 2}}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: 1.7, ease: "easeOut", delay: 2 }}
                     className="inline-block"
                   >
                     we work with
@@ -114,12 +119,89 @@ export default function Page () {
             </div>
           </CardHeader>
           <CardContent className={"mb-3"}>
-            <CustomCarousel isLooping={true} carouselItems={sampleCarouselItems}/>
+            <CustomCarousel isLooping={true} carouselItems={sampleCarouselItems} />
           </CardContent>
-        
+
         </Card>
+
       </div>
-    
+
+
+      <Service />
+      {/* <Members /> */}
+
+
+      <div className={"my-4 mx-2 "}>
+        <Card>
+          <CardHeader>
+            <div className="grid grid-cols-1 bg-gray-100 lg:grid-cols-12 my-2">
+              <motion.p
+                className="col-span-2 uppercase font-bold text-muted-foreground"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+              >
+                our team
+                <br />
+
+              </motion.p>
+              <div className="col-span-10">
+                <motion.p className="scroll-m-20 text-5xl font-medium tracking-tight leading-12">
+                  <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1.5, ease: "easeOut", }}
+                    className="inline-block"
+                  >
+                    meet our
+                  </motion.span>
+                  {" "}
+                  <motion.span
+                    initial={{ opacity: 0, y: -10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: .4, ease: "easeOut", delay: 0.8 }}
+                    className="inline-block line-through"
+                  >
+
+                  </motion.span>
+                  <br className="lg:hidden" />
+                  {` `}
+                  <motion.span
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: 1.7, ease: "easeOut", delay: 1.2 }}
+                    className="inline-block"
+                  >
+                    CHEmates
+                  </motion.span>
+                  <br />
+                  <motion.span
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.75 }}
+                    transition={{ duration: 1.7, ease: "easeOut", delay: 2 }}
+                    className="inline-block"
+                  >
+                    {/* we work with */}
+                  </motion.span>
+                </motion.p>
+              </div>
+
+            </div>
+
+
+          <Members />
+
+          </CardHeader>
+
+
+        </Card>
+
+
+      </div>
+
     </>
   );
 }

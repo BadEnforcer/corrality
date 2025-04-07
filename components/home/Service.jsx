@@ -11,7 +11,7 @@ const Service = () => {
     return (
 
 
-        <div id='services'  className='flex h-screen flex-col items-center mb-10 gap-4 my-16 md:mx-10 text-gray-800' >
+        <div id='services'  className='flex  flex-col items-center mb-10 gap-4 my-16 md:mx-10 text-gray-800' >
         <h1 className='text-3xl text-slate-700 font-medium'>
             What we offer
         </h1>
@@ -26,7 +26,7 @@ const Service = () => {
     
                 <div key={index }  className="gap-2    border   hover:bg-gray-400 border-black rounded  overflow-hidden cursor-pointer hover:-translate-y-1 duration-300 transition-all  items-center pt-4 ">
                    
-                    <Image className='md:w-24  rounded-full' src={icon} alt='' />
+                    <Image className='md:w-16 items-center  rounded-full' src={icon} alt='' />
     
                     <div className="px-20 py-4 mb-4  ">
 
